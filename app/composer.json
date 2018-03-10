@@ -1,0 +1,44 @@
+{
+  "name": "coding-berlin/phpico",
+  "description": "the smallest docker based php setup possible",
+  "authors": [
+    {
+      "name": "Stefan A",
+      "email": "stadolf@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "CoB\\": "src/CoB/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "CoB\\Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "php": "^7.2"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "preferred-install": {
+      "*": "dist"
+    },
+    "use-include-path": true,
+    "sort-packages": true,
+    "github-protocols": [
+      "https"
+    ],
+    "process-timeout": 600
+  },
+  "scripts": {
+    "compile": [
+    ],
+    "post-install-cmd": [
+    ],
+    "post-update-cmd": [
+    ]
+  }
+}
