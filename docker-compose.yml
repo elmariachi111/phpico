@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+  php:
+    build: docker/fpm
+    volumes:
+        - ./app/:/var/www/
+  nginx:
+    build: docker/nginx
+    image: nginx
+    ports:
+        - 8080:80
+    volumes_from:
+        - php
+    volumes:
+        - ./logs/nginx/:/var/log/nginx

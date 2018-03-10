@@ -1,0 +1,79 @@
+.idea
+
+# CMake
+cmake-build-debug/
+cmake-build-release/
+## File-based project format:
+*.iws
+
+## Plugin-specific files:
+
+# IntelliJ
+out/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Cursive Clojure plugin
+.idea/replstate.xml
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+logs
+!logs/.gitkeep
+
+# Cache and logs (Symfony2)
+/app/app/cache/*
+/app/app/logs/*
+!/app/app/cache/.gitkeep
+!/app/app/logs/.gitkeep
+
+# Email spool folder
+/app/app/spool/*
+
+# Cache, session files and logs (Symfony3)
+/app/var/cache/*
+/app/var/logs/*
+/app/var/sessions/*
+!/app/var/cache/.gitkeep
+!/app/var/logs/.gitkeep
+!/app/var/sessions/.gitkeep
+
+# Parameters
+/app/app/config/parameters.yml
+/app/app/config/parameters.ini
+
+# Managed by Composer
+/app/app/bootstrap.php.cache
+/app/var/bootstrap.php.cache
+/app/bin/*
+!/app/bin/console
+!bin/symfony_requirements
+/vendor/
+
+# Assets and user uploads
+/web/bundles/
+/web/uploads/
+
+# PHPUnit
+/app/phpunit.xml
+/phpunit.xml
+
+# Build data
+/build/
+
+# Composer PHAR
+/composer.phar
+
+# Backup entities generated with doctrine:generate:entities command
+**/Entity/*~
+
+# Embedded web-server pid file
+/.web-server-pid
