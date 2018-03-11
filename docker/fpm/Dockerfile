@@ -29,6 +29,7 @@ RUN docker-php-ext-install opcache
 
 # install xdebug
 RUN pecl install xdebug && docker-php-ext-enable xdebug
+RUN pecl install apcu && docker-php-ext-enable xdebug
 
 COPY php.ini /usr/local/etc/php/conf.d/30-custom.php.ini
 

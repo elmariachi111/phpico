@@ -35,5 +35,19 @@ class HelloWorld
         return $number++;
     }
 
+    public function getMyCacheValue() {
+        return apcu_fetch('hello_world');
+    }
+
+    public function incrementMyCacheValue(){
+        apcu_inc('hello_world');
+    }
+
+    public function __destruct()
+    {
+        echo "Oh, going down!";
+    }
+
+
 }
 
